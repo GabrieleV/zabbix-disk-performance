@@ -61,3 +61,8 @@ zabbix_get -s 127.0.0.1 -k "custom.vfs.discover_disks"
 # view statistics for 'sda' disk
 zabbix_get -s 127.0.0.1 -k "custom.vfs.dev.write.sectors[sda]"
 ```
+
+Debian Package build
+------------
+
+    fakeroot dpkg-deb --build  src/ 
